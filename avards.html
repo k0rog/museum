@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Наградные документы</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/avards.css">
+</head>
+<body>
+<div id=box>
+  <div class="main">
+    <a href="./index.html">На главную</a>
+  </div>
+  <div class="fire">
+    <img src="./images/eternal_1.gif">
+  </div>
+  <div class="avards">
+    <a class="documents" href="./veterans.html">Педагоги - <br>Ветераны</a>
+  </div>
+</div>
+<div class="block">
+  <span>Якубов Иван Игнатьевич</span>
+  <button class="accordion change">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/нл1.png" alt="">
+  </div>
+  <button class="accordion">подвиг героя</button>
+  <div class="panel">
+    <img src="images/avards/1пр.png" alt=""> <br><img src="images/avards/П1.png" alt="">
+  </div>
+  <button class="accordion change">выписка из приказа</button>
+  <div class="panel">
+    <img src="images/avards/о1.png" alt="">
+  </div>
+</div>
+<div class="block">
+  <span>Хацков Иван Андреевич</span>
+  <button class="accordion">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/нл2.png" alt="">
+  </div>
+  <button class="accordion change">выписка из приказа</button>
+  <div class="panel">
+    <img src="images/avards/П2.png" alt="">
+  </div>
+</div>
+</div>
+<div class="block">
+  <span>Реутов Федор Михайлович</span>
+  <button class="accordion">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/нл5.png" alt="">
+
+  </div>
+  <button class="accordion change">выписка из приказа</button>
+  <div class="panel">
+    <img src="images/avards/о5.png" alt="">
+    <img src="images/avards/нл5_1.png" alt="">
+  </div>
+</div>
+<div class="block">
+  <span>Можайский Павел Федорович</span>
+  <button class="accordion">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/нл6.png" alt="">
+  </div>
+  <button class="accordion change">подвиг героя</button>
+  <div class="panel">
+    <img src="images/avards/П6.png" alt="">
+  </div>
+  <button class="accordion">выписка из приказа</button>
+  <div class="panel">
+    <img src="images/avards/о6.png" alt="">
+  </div>
+</div>
+<div class="block">
+  <span>Козловский Юлий Иосифович</span>
+  <button class="accordion change">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/нл8.png" alt=""> <br>
+    <img src="images/avards/нл81.png" alt="">
+  </div>
+  <button class="accordion">подвиг героя</button>
+  <div class="panel">
+    <img src="images/avards/П8.png" alt="">
+  </div>
+  <button class="accordion change">наградной из приказа</button>
+  <div class="panel">
+    <img src="images/avards/о8.png" alt=""><br>
+    <img src="images/avards/о81.png" alt="">
+  </div>
+</div>
+<div class="block">
+  <span>Дмитриев Игорь Львович</span>
+  <button class="accordion">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/нл9.png" alt=""> <br>
+    <img src="images/avards/нл91.png" alt="">
+  </div>
+  <button class="accordion change">подвиг героя</button>
+  <div class="panel">
+    <img src="images/avards/П9.png" alt=""> <br>
+    <img src="images/avards/П91.png" alt="">
+  </div>
+  <button class="accordion">выписка из приказа</button>
+  <div class="panel">
+    <img src="images/avards/о9.png" alt="">
+  </div>
+</div>
+<div class="block">
+  <span>Азаров Валентин Кузьмич</span>
+  <button class="accordion change">наградной лист</button>
+  <div class="panel">
+    <img src="images/avards/о10.png" alt="">
+  </div>
+  <button class="accordion">подвиг героя</button>
+  <div class="panel">
+    <img src="images/avards/П10.png" alt="">
+  </div>
+</div>
+<script>
+  let acc = document.getElementsByClassName("accordion");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.classList.contains('show')) {
+        panel.classList.remove('show');
+      } else {
+        panel.classList.add('show');
+      }
+    });
+  }
+</script>
+</body>
+</html>

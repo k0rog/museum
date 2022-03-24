@@ -1,0 +1,175 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+  <title>Символы Победы</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<style>
+  @font-face {
+    font-family: "Lobster";
+    src: local("lobsterRegular"), url("./fonts/lobsterRegular.woff") format("woff");
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: repeating-linear-gradient(-22deg, #ffd9d929 0, #1514140d 50px, #ad9f9f00 50px, #cccccc36 100px);
+  }
+
+  .container {
+    flex: 1;
+  }
+
+  #carousel {
+    display: flex;
+    justify-content: center;
+    max-height: 150px;
+    overflow-x: auto;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+  }
+
+  #carousel a {
+    list-style: upper-roman;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/star.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 3px 0 #123;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 100px;
+    min-height: 100px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content .image img {
+    max-width: 100%;
+  }
+
+  #content .description h1 {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 4px 3px 0 #123;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  #content .description p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    max-width: 700px;
+  }
+
+  #content .hint {
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", sans-serif;
+  }
+
+  .route {
+    padding: 0 10px 10px;
+    font-family: "Trebuchet MS", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .route a {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    background: url(./images/star1.png);
+    background-size: 120px 120px;
+  }
+
+  .route a:last-child {
+    margin-right: 10px;
+  }
+
+  #modal {
+    opacity: 0;
+    transition: opacity .2s;
+    width: 200px;
+    min-height: 150px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #000;
+    background: #fff;
+    position: absolute;
+    right: 10px;
+    bottom: 150px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  #modal img {
+    max-width: 100%;
+    width: 35%;
+  }
+</style>
+<body onload="createElements()">
+<div class="container">
+  <div id="carousel">
+  </div>
+  <div id="content">
+    <div class="description">
+      <h1></h1>
+      <p></p>
+    </div>
+    <div class="image"></div>
+    <div class="hint">
+      Для просмотра 3D - моделей скачайте приложение
+    </div>
+  </div>
+</div>
+<div class="route">
+  <a href="./index.html">На главную</a>
+  <a
+      onmouseover="show()"
+      onmouseleave="hide()"
+      href="https://drive.google.com/open?id=1hrNiywxGHn4g7wnbfeb4RN9l9YaFfbuQ">Скачать приложение</a>
+</div>
+<div id="modal">
+  <ol>
+    <li>Для просмотра 3D - моделей скачайте приложение "75_Years.apk".</li>
+    <li>Через USB - кабель или другими способами скопируйте на мобильное устройство и запустите установку.</li>
+    <li>После установки запустите приложение и наслаждайтесь просмотром.</li>
+  </ol>
+  <img src="./images/ordens/Order_of_the_Patriotic_War.png" alt="">
+</div>
+<script type="text/javascript" src="./scripts/weapons.js"></script>
+<script>
+  const show = () => document.getElementById('modal').style.opacity = '1';
+  const hide = () => document.getElementById('modal').style.opacity = '0';
+</script>
+</body>
+</html>

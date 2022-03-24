@@ -1,0 +1,29 @@
+ul {
+	height: 10px;
+	overflow: hidden;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	list-style-type: none;
+	transition: 2s ease;
+	border-top: 50px solid rgba(255, 255, 255, 0.392);
+	padding: 0;
+	width: 200px;
+}
+
+ul:hover {
+	opacity: 1;
+	height: 400px;  /* - изменить, если список не раскрывается полностью */
+	width: 340px;
+}
+
+ul li {
+	opacity: 0.2;
+	transition: 1s;
+	max-width: 200px;
+}
+
+ul li:hover {
+	opacity: 1;
+}

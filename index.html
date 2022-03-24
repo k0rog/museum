@@ -1,0 +1,73 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title>Главная</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<header>
+    <img src="./images/fire_main.gif">
+    <div class="title">
+        <p class=p1>Учреждение образования Гомельский государственный аграрно-экономический колледж</p>
+        <p class="p2">колледж помнит</p>
+    </div>
+</header>
+<div id="container">
+    <div class="left">
+        <a href="./Project9.html">
+            <div class="link">
+                <span>Музей</span>
+            </div>
+        </a>
+        <a href="./Project8.html">
+            <div class="link">
+                <span>зал 1</span>
+            </div>
+        </a>
+        <a href="./Project10.html">
+            <div class="link">
+                <span>зал 2</span>
+            </div>
+        </a>
+    </div>
+    <div class="right">
+        <a href="./veterans.html">
+            <div class="link">
+                <span>педагоги- <br>ветераны</span>
+            </div>
+        </a>
+        <a href="./weapons.html" class="symbols">
+            <div class="link hint" onmouseover="show()" onmouseleave="hide()">
+                <span>символы Победы</span>
+            </div>
+        </a>
+        <a href="https://drive.google.com/open?id=1hrNiywxGHn4g7wnbfeb4RN9l9YaFfbuQ" class="app">
+            <div class="link">
+                <span>Скачать приложение</span>
+            </div>
+        </a>
+        <div id="modal">Просмотр 3D - моделей с элементами дополненной реальности с использованием мобильного устройства
+        </div>
+    </div>
+</div>
+<div class="shared">
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,linkedin,viber" data-size="s"></div>
+</div>
+<div class="cube">
+    <div class="back side"></div>
+    <div class="left side"></div>
+    <div class="right side"></div>
+    <div class="top side"></div>
+    <div class="bottom side"></div>
+    <div class="front side"></div>
+</div>
+<script>
+  const show = () => document.getElementById('modal').style.opacity = '1';
+  const hide = () => document.getElementById('modal').style.opacity = '0';
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Lobster";
+    src: local("lobsterRegular"), url("../fonts/lobsterRegular.woff") format("woff");
+}
+
+body {
+    background-image: url("../images/1941-г.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: #605b58;
+    width: 900px;
+    margin: 0 auto;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#box .fire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box .fire img {
+    width: 50%;
+}
+
+#box a {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b79d6b;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Lobster", sans-serif;
+    background-image: url('../images/star1.png');
+    background-size: 120px 120px;
+}
+
+.block {
+    margin: 10px 0;
+}
+
+.accordion {
+    background: #fff6f6bf;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: "Lobster", sans-serif;
+    text-shadow: 1px 1px 0 #b6babd;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+}
+
+.accordion.change {
+    background: #8684849c;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block span {
+    text-align: center;
+    color: #fb8282;
+    font-family: "Lobster", sans-serif;
+    font-size: 26px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #123;
+    font-weight: 900;
+    padding: 9px 15px;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel img {
+    max-width: 100%;
+}
+
+.panel.show {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: auto;
+        padding: 0 15px;
+        background-size: cover;
+    }
+
+    #box .main a,
+    #box .avards a {
+        width: 100px;
+        height: 100px;
+        background-size: 100px 100px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,98 @@
+@font-face
+  font-family: "Lobster"
+  src: local("lobsterRegular"), url("../fonts/lobsterRegular.woff") format("woff")
+
+body
+  margin: 0
+  display: flex
+  flex-direction: column
+  background-image: repeating-linear-gradient(-22deg, #ffd9d929 0, #1514140d 50px, #ad9f9f00 50px, #cccccc36 100px)
+
+  header
+    font-size: 66px
+    font-family: "Lobster", sans-serif
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    img
+      max-width: 100%
+
+    a
+      width: 120px
+      height: 120px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #5b3319
+      font-size: 20px
+      font-weight: bolder
+      letter-spacing: 1.2px
+      text-transform: capitalize
+      text-decoration: none
+      background-image: url('../images/star1.png')
+      background-size: 120px 120px
+
+  h1
+    font-size: 47px
+    font-weight: 700
+    text-align: center
+    color: #9e8870
+    margin-bottom: 0
+    text-shadow: 3px 3px 0 #123
+    text-transform: uppercase
+    letter-spacing: 3px
+    font-family: "Lobster", sans-serif
+
+  .fire
+    position: absolute
+    left: 0
+    bottom: 200px
+    max-width: 250px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    img
+      width: 70%
+
+
+  #full
+    flex: 1
+    display: flex
+    align-items: flex-start
+    justify-content: center
+
+    img
+      transition: max-width 1.5s, height 1.5s, opacity 1s
+
+      &.show
+        max-width: 100%
+        height: 100%
+        opacity: 1
+
+      &.hide
+        opacity: 0
+        max-width: 0
+        height: 0
+
+  #carousel
+    display: flex
+    flex: 0 0
+    overflow-x: scroll
+    margin: 0 0 20px 0
+    padding-left: 10px
+
+    img
+      border: 2px solid transparent
+      max-width: 150px
+      margin: 0 5px
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+      &.active
+        border: 2px solid black
