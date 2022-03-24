@@ -9,15 +9,15 @@
     var buttonsList = new Array(
         new Button(
             "Аллея героев",
-            "../Panorams/Loev/Avenue of Heroes/_auto/html5/Project9.html",
+            "../Project9.html",
             "../images/alley.jpg"),
 
         new Button("Зал 1", 
-            "../Panorams/Loev/hall1/_auto/html5/Project8.html",
+            "../Project8.html",
             "../images/zal_1.jpg"),
 
         new Button("Зал 2", 
-            "../Panorams/Loev/hall2/_auto/html5/Project10.html",
+            "../Project10.html",
             "../images/zal_2.jpg"),
 
         new Button("Главная",
